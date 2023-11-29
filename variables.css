@@ -1,0 +1,20 @@
+
+
+:root {
+    --ratio-width: 16px;
+    --ratio-height: 9px;
+    --escala: 8;
+    --imatges: 7;
+    --img-width: calc(var(--escala) * var(--ratio-width));
+    --img-height: calc(var(--escala) * var(--ratio-height));
+    --big-img-width: calc(var(--imatges) * var(--img-width));
+    --big-img-height: calc(var(--imatges) * var(--img-height));
+}
+@font-face {
+font-family: Roboto;
+src: url(Roboto-Light.ttf)
+}
+@font-face {
+font-family: Valorant;
+src: url(ValorantFont.ttf);
+}

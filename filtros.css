@@ -1,0 +1,435 @@
+/* VARIABLES */
+@import url("variables.css");
+
+/* PRIMER DIV*/
+body>div:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            red, blue, deeppink, blue,
+            red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 1px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    text-align: center;
+    font-family: Roboto;
+}
+
+h2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    text-align: center;
+    font-family: Roboto;
+}
+
+h5 {
+    position: absolute;
+    top: 47%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+h4 {
+    position: absolute;
+    top: 85%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto';
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: hsla(152, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1);
+}
+
+img {
+    z-index: -1;
+    position: absolute;
+    width: var(--big-img-width);
+    height: var(--big-img-height);
+    border-radius: 20px;
+}
+
+body>div {
+    position: relative;
+    display: grid;
+    width: var(--big-img-width);
+    height: var(--big-img-height);
+    grid-template-rows: repeat(var(--imatges), auto);
+    grid-template-columns: repeat(var(--imatges), auto);
+    color: aliceblue;
+}
+
+body>div>div {
+    padding: 20px;
+    text-align: center;
+}
+
+/* FILA 1*/
+div>div:nth-of-type(1):hover~img {
+    filter: hue-rotate(20deg);
+}
+
+div>div:nth-of-type(2):hover~img {
+    filter: hue-rotate(40deg);
+}
+
+div>div:nth-of-type(3):hover~img {
+    filter: hue-rotate(60deg);
+}
+
+div>div:nth-of-type(4):hover~img {
+    filter: hue-rotate(80deg);
+}
+
+div>div:nth-of-type(5):hover~img {
+    filter: hue-rotate(100deg);
+}
+
+div>div:nth-of-type(6):hover~img {
+    filter: hue-rotate(120deg);
+}
+
+div>div:nth-of-type(7):hover~img {
+    filter: hue-rotate(140deg);
+}
+
+/* FILA 2*/
+
+div>div:nth-of-type(8):hover~img {
+    filter: hue-rotate(160deg);
+}
+
+div>div:nth-of-type(9):hover~img {
+    filter: hue-rotate(180deg);
+}
+
+div>div:nth-of-type(10):hover~img {
+    filter: hue-rotate(200deg);
+}
+
+div>div:nth-of-type(11):hover~img {
+    filter: hue-rotate(220deg);
+}
+
+div>div:nth-of-type(12):hover~img {
+    filter: hue-rotate(240deg);
+}
+
+div>div:nth-of-type(13):hover~img {
+    filter: hue-rotate(260deg);
+}
+
+div>div:nth-of-type(14):hover~img {
+    filter: hue-rotate(280deg);
+}
+
+/* FILA 3*/
+
+div>div:nth-of-type(15):hover~img {
+    filter: sepia(1) saturate(1)
+}
+
+div>div:nth-of-type(16):hover~img {
+    filter: sepia(1) saturate(1.5);
+}
+
+div>div:nth-of-type(17):hover~img {
+    filter: sepia(1) saturate(2);
+}
+
+div>div:nth-of-type(18):hover~img {
+    filter: sepia(1) saturate(2.5);
+}
+
+div>div:nth-of-type(19):hover~img {
+    filter: sepia(1) saturate(3);
+}
+
+div>div:nth-of-type(20):hover~img {
+    filter: sepia(1) saturate(4);
+}
+
+div>div:nth-of-type(21):hover~img {
+    filter: sepia(1) saturate(5);
+}
+
+/* FILA 4*/
+
+div>div:nth-of-type(22):hover~img {
+    filter: brightness(1.00) contrast(1.10);
+}
+
+div>div:nth-of-type(23):hover~img {
+    filter: brightness(1.00) contrast(1.20);
+}
+
+div>div:nth-of-type(24):hover~img {
+    filter: brightness(1.00) contrast(1.30);
+}
+
+div>div:nth-of-type(25):hover~img {
+    filter: brightness(1.00) contrast(1.40);
+}
+
+div>div:nth-of-type(26):hover~img {
+    filter: brightness(1.00) contrast(1.40);
+}
+
+div>div:nth-of-type(27):hover~img {
+    filter: brightness(1.00) contrast(1.50);
+}
+
+div>div:nth-of-type(28):hover~img {
+    filter: brightness(1.00) contrast(1.80);
+}
+
+/* FILA 5*/
+
+div>div:nth-of-type(29):hover~img {
+    filter: brightness(1.50) contrast(1.10);
+}
+
+div>div:nth-of-type(30):hover~img {
+    filter: brightness(1.50) contrast(1.20);
+}
+
+div>div:nth-of-type(31):hover~img {
+    filter: brightness(1.50) contrast(1.30);
+}
+
+div>div:nth-of-type(32):hover~img {
+    filter: brightness(1.50) contrast(1.40);
+}
+
+div>div:nth-of-type(33):hover~img {
+    filter: brightness(1.50) contrast(1.50);
+}
+
+div>div:nth-of-type(34):hover~img {
+    filter: brightness(1.50) contrast(1.80);
+}
+
+div>div:nth-of-type(35):hover~img {
+    filter: brightness(1.50) contrast(2.00);
+}
+
+/* FILA 6*/
+
+div>div:nth-of-type(36):hover~img {
+    filter: brightness(2.00) contrast(1.00) blur(1px) grayscale(50%);
+}
+
+div>div:nth-of-type(37):hover~img {
+    filter: brightness(2.00) contrast(1.10) blur(1px) grayscale(50%);
+}
+
+div>div:nth-of-type(38):hover~img {
+    filter: brightness(2.00) contrast(1.20) blur(1px) grayscale(50%)
+}
+
+div>div:nth-of-type(39):hover~img {
+    filter: brightness(2.00) contrast(1.30) blur(1px) grayscale(50%)
+}
+
+div>div:nth-of-type(40):hover~img {
+    filter: brightness(2.00) contrast(1.40) blur(1px) grayscale(50%)
+}
+
+div>div:nth-of-type(41):hover~img {
+    filter: brightness(2.00) contrast(1.50) blur(1px) grayscale(50%)
+}
+
+div>div:nth-of-type(42):hover~img {
+    filter: brightness(2.00) contrast(1.80) blur(1px) grayscale(50%)
+}
+
+/* FILA 7*/
+
+div>div:nth-of-type(43):hover~img {
+    filter: grayscale(20%)
+}
+
+div>div:nth-of-type(44):hover~img {
+    filter: grayscale(30%)
+}
+
+div>div:nth-of-type(45):hover~img {
+    filter: grayscale(40%)
+}
+
+div>div:nth-of-type(46):hover~img {
+    filter: grayscale(50%)
+}
+
+div>div:nth-of-type(47):hover~img {
+    filter: grayscale(60%)
+}
+
+div>div:nth-of-type(48):hover~img {
+    filter: grayscale(70%)
+}
+
+div>div:nth-of-type(49):hover~img {
+    filter: grayscale(90%)
+}
+
+/* CLASES */
+
+.aa {
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+
+}
+
+.ab {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 230px;
+    height: 170px;
+
+}
+
+.cc {
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 230px;
+    height: 170px;
+
+}
+
+/* Media queries para hacer el diseño responsive */
+
+@media screen and (max-width: 1400px) {
+
+    .ab {
+        opacity: 0;
+    }
+
+    .cc {
+        opacity: 0;
+    }
+
+    h4 {
+        opacity: 0;
+    }
+
+    h5 {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    :root {
+        --escala: 8;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    :root {
+        --escala: 6;
+    }
+
+    .ab {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --escala: 5;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    :root {
+        --escala: 4;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    :root {
+        --escala: 3;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    :root {
+        --escala: 2;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    h2 {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    h1 {
+        opacity: 0;
+    }
+}
